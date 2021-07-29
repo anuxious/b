@@ -13,7 +13,12 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
+<stule>
+    .dark-mode {
+  background-color: #121212;
+  color: #9F9492;
+}
+    </style>
 <body>
     <div class="site-wrapper">
         <div class="main-overlay"></div>
@@ -92,7 +97,7 @@
                                 <span class="burger-icon"></span>
                             </button>
                              <div class="header-buttons">
-                            <button class="search icon-button">
+                            <button class="theme-button" onclick="myFunction()">
                                 <i class="fas fa-adjust"></i>
                             </button>
                         </div>
@@ -1380,6 +1385,12 @@
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.sticky-sidebar.min.js"></script>
     <script src="main.js"></script>
+        <script>
+   function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 
 </body>
 
